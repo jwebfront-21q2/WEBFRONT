@@ -121,8 +121,9 @@ console.log("SORT(ASC):", fruits);
 //  사용자의 규칙으로 정렬할 경우, 키함수를 재정의
 fruits.sort(function(v1, v2) {
     //  반환 값이 0: 순번이 같다
+    //  내림차순 정렬의 예
     if (v1 == v2) return 0;
-    if (v1 < v2) return 1;
-    if (v1 > v2) return -1;
+    if (v1 < v2) return 1
+    else return 1;
 });
 console.log("SORT(User Defined):", fruits);
