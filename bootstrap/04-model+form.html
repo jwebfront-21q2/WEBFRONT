@@ -21,40 +21,44 @@
             data-target="#loginDialog">로그인</button>
 
     <!-- Login Modal -->
-    <div class="modal" role="dialog" id="loginDialog">
-      <dic class="modal-dailog" role="document">
+    <div class="modal" tabindex="-1" role="dialog"
+      id="loginDialog">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <!-- 헤더 -->
           <div class="modal-header">
-            <h5>Login</h5>
-            <button class="close" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <!-- FORM 컴포넌트 -->
           <div class="modal-body">
+            <!-- FORM Component-->
             <form>
-              <!-- form-row -->
               <div class="form-row row">
-                <!-- form-group: label과 input을 묶는 역할-->
-                <div class="form-group col-md-6">
-                  <label for="email">이메일</label>
-                  <input type="email" class="form-control" id="email">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="password">비밀번호</label>
-                  <input type="password" class="form-control" id="password">
-                </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">이메일</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="password">비밀번호</label>
+                      <input type="password" class="form-control" id="password">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="address">주소</label>
+                    <input type="text" class="form-control" id="address">
+                  </div>
               </div>
             </form>
+            <!-- /FORM Component -->
           </div>
           <div class="modal-footer">
-            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary">Login</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
-      </dic>
+      </div>
     </div>
+
     <!-- 모달 대화 상자 -->
     <div class="modal" role="dialog" id="exampleDialog">
       <div class="modal-dialog" role="document">
